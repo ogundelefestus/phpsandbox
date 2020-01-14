@@ -96,12 +96,12 @@ if (filter_has_var(INPUT_POST, 'submit')) {
            <div class="form-group">
             <label >Name</label>
 
-            <input type="text" name="name" class="form-control" value="<?php echo isset($_POST['name'])? $name : ''; ?>">
+            <input type="text" name="name" class="form-control" value="<?php echo isset($_POST['name'])? $name : ''; ?>" required>
            </div>
              <div class="form-group">
             <label >Email</label>
 
-            <input type="text" name="email" class="form-control" value="<?php echo isset($_POST['email'])? $email : ''; ?>">
+            <input type="text" name="email" class="form-control" value="<?php echo isset($_POST['email'])? $email : ''; ?>" required>
            </div>
              <div class="form-group">
             <label >Message</label>
